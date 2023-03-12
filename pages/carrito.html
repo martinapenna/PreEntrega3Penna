@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Terra Café</title>
+    <link rel="shortcut icon" href="../assets/img/favicon.png" type="image/x-icon">
+    <title>Bootstrap: CDN</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <link rel="stylesheet" href="../css/styles.css">
+</head>
+<body>
+    <header class="cabecera">
+        <nav class="navbar navbar-expand-lg bg-light">
+            <div class="container-fluid">
+              <a class="navbar-Terra" href="#">
+                  <img class="logo" src="../assets/img/logo.png" alt="logo">
+              </a>
+              <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                  <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="../index.html">Inicio</a>
+                  </li>
+                  <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="../pages/productos.html" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                      Productos
+                    </a>
+                    <ul class="dropdown-menu">
+                      <li><a class="dropdown-item" href="#">Café en grano</a></li>
+                      <li><hr class="dropdown-divider"></li>
+                      <li><a class="dropdown-item" href="#">Café molido</a></li>
+                      <li><hr class="dropdown-divider"></li>
+                      <li><a class="dropdown-item" href="#">Tazas</a></li>
+                    </ul>
+                  </li>
+                   <li class="nav-item">
+                    <a class="nav-link" href="nosotros.html"> Nosotros</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="../pages/contacto.html"> Contacto</a>
+                  </li>
+                  <li class="nav-item">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="strong-grey" class="bi bi-person" viewBox="0 0 16 16">
+                        <path d="M8 8a3 3 0 1 0 0-6 3 3 0 0 0 0 6Zm2-3a2 2 0 1 1-4 0 2 2 0 0 1 4 0Zm4 8c0 1-1 1-1 1H3s-1 0-1-1 1-4 6-4 6 3 6 4Zm-1-.004c-.001-.246-.154-.986-.832-1.664C11.516 10.68 10.289 10 8 10c-2.29 0-3.516.68-4.168 1.332-.678.678-.83 1.418-.832 1.664h10Z"/>
+                    </svg>
+                  </li>
+                  <li class="nav-item">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="strong-grey" class="bi bi-heart" viewBox="0 0 16 16">
+                        <path d="m8 2.748-.717-.737C5.6.281 2.514.878 1.4 3.053c-.523 1.023-.641 2.5.314 4.385.92 1.815 2.834 3.989 6.286 6.357 3.452-2.368 5.365-4.542 6.286-6.357.955-1.886.838-3.362.314-4.385C13.486.878 10.4.28 8.717 2.01L8 2.748zM8 15C-7.333 4.868 3.279-3.04 7.824 1.143c.06.055.119.112.176.171a3.12 3.12 0 0 1 .176-.17C12.72-3.042 23.333 4.867 8 15z"/>
+                    </svg>
+                  </li>
+                    <a class="nav-item" href="#">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="stong-grey" class="bi bi-bag" viewBox="0 0 16 16">
+                        <path d="M8 1a2.5 2.5 0 0 1 2.5 2.5V4h-5v-.5A2.5 2.5 0 0 1 8 1zm3.5 3v-.5a3.5 3.5 0 1 0-7 0V4H1v10a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V4h-3.5zM2 5h12v9a1 1 0 0 1-1 1H3a1 1 0 0 1-1-1V5z"/>
+                        </svg>
+                    </a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </nav>
+    </header>
+    <main>
+        <section class="detalle-producto">
+            <img class="detalle-foto-producto" src="../assets/img/producto.jpg" href="detalle-foto-producto">
+            <p class="texto-detalle-producto">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quae repudiandae iste aperiam quam harum alias doloribus nihil nulla! Eos laudantium sint necessitatibus porro cumque delectus reprehenderit nostrum eum eaque recusandae?</p>
+            <article class="detalle-producto-pxc">
+                <div class="cantidad">
+                    <input type="number">
+                    <label class="texto-cantidad" for="cantidad" name="cantidad">Cantidad</label>
+                </div>
+                <h2 class="precio-producto">123 USD</h2>
+            </article>
+        </section>
+        <section class="detalle-envio">
+            <h2 class="detalles-envio">Martina Penna</h2>
+            <h2 class="detalles-envio">Calle 123</h2>
+            <h2 class="detalles-envio">Métodos de pago</h2>
+            <button class="tarjetas">Trajeta de crédito</button>
+            <button class="tarjetas">Trajeta de débito</button>
+            <button class="tarjetas">Visa **** 1234</button>
+        </section>
+        <section class="comprar">
+            <button class="boton-comprar">Comprar</button>
+        </section>
+    </main>
+    <footer class="footer">
+        <div class="container-fluid">
+          <a class="footer-Terra" href="#">
+              <img class="logo" src="../assets/img/logo.png" alt="logo">
+          </a>
+        </div>
+</footer>
+</body>
